@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html>
-<body style="background-image:url('flower.png'); background-repeat: no-repeat; background-size: cover; text-align: center;">
 
- <p style="color:deeppink; font-style:bold";>Michelle Liang's Music Player: </p>
- <audio controls id="play-audio">
- <source src="Empire.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
+<style>
+body {
+background-color: powderblue;
+background-image: url("flower.png");
+background-repeat: repeat;
+background-attachment: fixed;
+}
+</style>
+<body>
+<br/><br/><br/>
+<div style="text-align: center">
+<h2 style="text-shadow: 2px 2px #FF0000; font-style: italic;">Happy Birthday to Rahb Y</h2>
+<audio controls id="play-audio">
+  <source src="Empire.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
 </audio>
-
+</div>
 <script>
 
 let playAudio = Document.getElementById("play-audio");
