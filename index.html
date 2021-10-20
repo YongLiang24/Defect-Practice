@@ -1,28 +1,63 @@
 <!DOCTYPE html>
 <html>
+<head>
+<title>Defect Practice Template</title>
+</head>
 
-<style>
-body {
-background-color: powderblue;
-background-image: url("flower.png");
-background-repeat: repeat;
-background-attachment: fixed;
-}
-</style>
 <body>
-<br/><br/><br/>
-<div style="text-align: center">
-<h2 style="text-shadow: 2px 2px #FF0000; font-style: italic;">Michelle Music Player</h2>
-  <p>Empire:</p>
-<audio controls id="play-audio">
-  <source src="Empire.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-</div>
-<script>
+<h4>Defect Practice Template - Defect 12345678</h4>
 
-let playAudio = Document.getElementById("play-audio");
-playAudio.play()
-</script>
+Summary:<input type="text" size="100" placeholder="[Team][Model][Carrier][Function][Others] your description"><br><br>
+
+SW Release:<input  type="text" placeholder="Device SW version">&nbsp &nbsp
+Perso:<input  type="text" placeholder="N/A if don't have">&nbsp &nbsp
+
+State:<select>
+<option disabled selected value>-select an option-</option>
+<option> New </option>
+<option> Assigned </option>
+<option> Delivered </option>
+<option> Verified </option>
+</select> <br><br>
+
+<Strong>Defect Description:</strong><br>
+<textarea rows="20" cols="70" placeholder="Please include preconditions, steps, log path, expected result, other relevant information, contact info"></textarea><br>
+
+Assigned Owner: <select>
+<option disabled selected value>-select an option-</option>
+<option>Jackson Wu</option>
+<option>Bruno Gao</option>
+<option>Jiani Ye</option>
+<option> appropriate R&D Owner </option>
+</select>&nbsp &nbsp
+
+Created By: <select>
+<option disabled selected value>-select an option-</option>
+<option>Jackson Wu</option>
+<option>Bruno Gao</option>
+<option>Jiani Ye</option>
+<option>Yong Liang</option>
+<option>Xu Yuan</option>
+<option>Anna Dai</option>
+</select>
+<br><br>
+CC:
+<select>
+<option disabled selected value>-select an option-</option>
+<option>guochu</option>
+</select> &nbsp
+<select>
+<option disabled selected value>-select an option-</option>
+<option>Wli5</option>
+</select> &nbsp 
+<button>Apply</button>
+<button>Save</button>
+<br><br>
+
+<input disabled placeholder="When Save/Apply State as 'New', fields can be changed/edited.(Real ALM)" size="120"> <br>
+<input disabled placeholder="When Save/Apply State as 'Assigned' or other, fields can not be changed/edited. (Additional Comment still can be added)" size="120"> <br>
+
+
 </body>
+
 </html>
